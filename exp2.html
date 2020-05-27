@@ -1,0 +1,260 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML&CSS</title>
+        <link href="style/实验二.css" rel="stylesheet" type="text/css" >
+    <meta name="generator" content="Hexo 4.2.1"></head>
+    <body>
+       <div class="box">
+        <div class="box1">
+            <div class="box2">
+                <!--导航到外部网站-->
+                <a href="HTML&CSS.html">Home</a>
+                <a href="https://www.w3school.com.cn/" target="_blank" rel="noopener">Study</a>
+                <a href="https://www.bilibili.com/" target="_blank" rel="noopener">Videos</a>
+                <a href="http://www.3366.com/" target="_blank" rel="noopener">Games</a>
+            </div>
+            <h1>HTML&CSS</h1>
+            <h4>designed by Zheng Xuetian</h4>
+        </div>
+        <div class="box3">
+            <h3>&nbsp&nbspCATEGORIES</h3>
+            <!--侧边栏导航以及侧边栏下拉导航-->
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn,"href="#html">HTML标签</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#hh">H1-H6</a></li>
+                                <li><a href="#hs">&lt;!--...--> </a></li>
+                                <li><a href="#ha">&lt;a></a></li>
+                                <li><a href="#hhe">&lt;head></a></li>
+                                <li><a href="#hp">&lt;p></a></li>
+                                <li><a href="#hl">&lt;li></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#css">CSS属性</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#cbg">背景</a></li>
+                                <li><a href="#cf">字体</a></li>
+                                <li><a href="#cl">链接</a></li>
+                                <li><a href="#cs">表格</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <a href="#js">JS语法</a>
+                    <div class="dropdown-content">
+                        <p>啥都没</p>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="box4">
+            <dl id="html">
+                <hr style="height:3px;border:none;border-top:3px double rgb(13, 4, 90);" /> 
+                <dt>HTML标签</dt>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <dd id="hh">HTML H1-H6标签</dd>
+                <dd><blockquote> <b>h1</b> 元素表示标题。HTML定义了标题元素的层次结构，其中 <b>h1</b> 是排名最高的。
+                    其它标题元素是 <b>h2</b>,<b>h3</b>到<b>h6</b>。
+                    相同排名的标题会分解内容，以便每个主题都在其自己的部分。</blockquote>
+                    <p>例子：</p>
+                    <code>
+                        &lt;h1>This is heading 1&lt;/h1><br/>
+                        &lt;h2>This is heading 2&lt;/h2><br/>
+                        &lt;h3>This is heading 3&lt;/h3><br/>
+                        &lt;h4>This is heading 4&lt;/h4><br/>
+                        &lt;h5>This is heading 5&lt;/h5><br/>
+                        &lt;h6>This is heading 6&lt;/h6><br/><br/>
+                    </code>
+                    <a href="https://www.w3school.com.cn/tiy/t.asp?f=html_headers" target="_blank" rel="noopener">点击查看运行结果</a>
+                </dd><br/>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <dd id="hs">HTML &lt;!--...--> 标签</dd><br/>
+                <dd><q> 注释标签用于在源代码中插入注释。注释不会显示在浏览器中。</q>
+                    <p>例子：</p>
+                    <code>
+                        &lt;!--这是一段注释。注释不会在浏览器中显示。--><br/><br/>
+                    </code>
+                    <a href="https://www.w3school.com.cn/tiy/t.asp?f=html_comment" target="_blank" rel="noopener">点击查看运行结果</a>
+                </dd><br/>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <dd id="ha">HTML &lt;a> 标签</dd>
+                <dd>
+                    <blockquote> &lt;a> 标签定义超链接，用于从一张页面链接到另一张页面。 <br/>
+                    &lt;a> 元素最重要的属性是 href 属性，它指示链接的目标。 <br/>
+                    在所有浏览器中，链接的默认外观是： 
+                    <ul>
+                    <li>未被访问的链接带有下划线而且是蓝色的</li> 
+                    <li>已被访问的链接带有下划线而且是紫色的</li>
+                    <li>活动链接带有下划线而且是红色的</li>
+                    </ul>
+                    </blockquote>
+                    <p>例子：</p>
+                    <code>
+                        &lt;a href="http://www.w3school.com.cn">W3School&lt;/a><br/><br/>
+                    </code>
+                    <a href="https://www.w3school.com.cn/tiy/t.asp?f=html_a" target="_blank" rel="noopener">点击查看运行结果</a>
+                </dd><br/>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <dd id="hhe">HTML &lt;head> 标签</dd>
+                <dd>
+                    <blockquote> &lt;head> 标签用于定义文档的头部，它是所有头部元素的容器。&lt;head> 中的元素可以引用脚本、指示浏览器在哪里找到样式表、提供元信息等等。<br/>
+文档的头部描述了文档的各种属性和信息，包括文档的标题、在 Web 中的位置以及和其他文档的关系等。绝大多数文档头部包含的数据都不会真正作为内容显示给读者。
+                    </blockquote>
+                    <p>例子：</p>
+                    <code>
+                        &lt;head><br/>
+                        &lt;title>我的第一个 HTML 页面&lt;/title><br/>
+                        &lt;/head>
+                        <br/><br/>
+                    </code>
+                    <a href="https://www.w3school.com.cn/tiy/t.asp?f=html_basic" target="_blank" rel="noopener">点击查看运行结果</a>
+                </dd><br/>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <dd id="hp">HTML &lt;p> 标签</dd>
+                <dd>
+                    <blockquote> &lt;p> 标签定义段落。p 元素会自动在其前后创建一些空白。<br/>浏览器会自动添加这些空间，您也可以在样式表中规定。
+                    </blockquote>
+                    <p>例子：</p>
+                    <code>
+                        &lt;p>这是段落。&lt;/p><br/>
+                        &lt;p>这是段落。&lt;/p><br/>
+                        &lt;p>这是段落。&lt;/p><br/>
+                        
+                        &lt;p>段落元素由 p 标签定义。&lt;/p>
+                        
+                        <br/><br/>
+                    </code>
+                    <a href="https://www.w3school.com.cn/tiy/t.asp?f=html_paragraphs1" target="_blank" rel="noopener">点击查看运行结果</a>
+                </dd><br/>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <dd id="hl">HTML &lt;li> 标签</dd>
+                <dd>
+                    <blockquote> &lt;li> 标签定义列表项目。<br/>&lt;li> 标签可用在有序列表 (&lt;ol>) 和无序列表 (&lt;ul>) 中。
+                    </blockquote>
+                    <p>例子：</p>
+                    <code>
+                        &lt;p>有序列表：&lt;/p><br/>
+                        &lt;ol><br/>
+                        &lt;li>打开冰箱门&lt;/li><br/>
+                        &lt;li>把大象放进去&lt;/li><br/>
+                        &lt;li>关上冰箱门&lt;/li><br/>
+                        &lt;/ol><br/>
+                        &lt;p>无序列表：&lt;/p><br/>
+                        &lt;ul><br/>
+                        &lt;li>雪碧&lt;/li><br/>
+                        &lt;li>可乐&lt;/li><br/>
+                        &lt;li>凉茶&lt;/li><br/>
+                        &lt;/ul>
+                        <br/><br/>
+                    </code>
+                    <a href="https://www.w3school.com.cn/tiy/t.asp?f=html_list_test" target="_blank" rel="noopener">点击查看运行结果</a>
+                </dd><br/><br/>
+                <table border="0">
+                    <tr>
+                        <td>2020/4/3</td>
+                        <td><a href="https://www.w3school.com.cn/html/index.asp" target="_blank" rel="noopener">了解更多HTML相关知识</a> |
+                            <a href="https://www.w3school.com.cn" target="_blank" rel="noopener">了解其他</a>
+                        </td>
+                    </tr>
+                </table>
+                <hr style="height:3px;border:none;border-top:3px double rgb(13, 4, 90);" /> 
+            </dl>
+            <dl id="css">
+                <dt>CSS属性</dt>
+                <dd id="cbg">CSS背景</dd>
+                <dd>
+                    <blockquote>
+                        <i>CSS</i> 允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。<br/>
+                        可以使用 <i>background-color</i> 属性为元素设置背景色。这个属性接受任何合法的颜色值。<br/>
+                        要把图像放入背景，需要使用 <i>background-image</i> 属性。<br/>
+                        <i>background-image</i> 属性的默认值是 <i>none</i>，表示背景上没有放置任何图像。<br/>
+                        如果需要在页面上对背景图像进行平铺，可以使用 <i<>background-repeat</i> 属性。<br/>
+                        可以利用 <i>background-position</i> 属性改变图像在背景中的位置。<br/>
+                    </blockquote>
+                    <a href="https://www.w3school.com.cn/css/css_background.asp" target="_blank" rel="noopener">具体内容请点击此处</a><br/><br/><br/><br/>
+                </dd>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <dd id="cf">CSS字体</dd>
+                <dd>
+                    <blockquote>
+                        <i>CSS</i> 字体属性定义文本的字体系列、大小、加粗、风格和变形。<br/>
+                        <ul>
+                            <li>使用 <i>font-family</i> 属性 定义文本的字体系列</li>
+                            <li><i>font-style</i> 属性最常用于规定斜体文本</li>
+                            <li><i>font-variant</i> 属性可以设定小型大写字母</li>
+                            <li><i>font-weight</i> 属性设置文本的粗细</li>
+                            <li><i>font-size</i> 属性设置文本的大小</li>
+                        </ul>
+                    </blockquote>
+                    <a href="https://www.w3school.com.cn/css/css_font.asp" target="_blank" rel="noopener">具体内容请点击此处</a><br/><br/><br/><br/>
+                    <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                </dd>
+                <dd id="cl">CSS链接</dd>
+                <dd>
+                    <blockquote>
+                        我们能够以不同的方法为链接设置样式。<br/>
+                        能够设置链接样式的 <i>CSS</i> 属性有很多种。<br/>
+                        链接的特殊性在于能够根据它们所处的状态来设置它们的样式。<br/>
+                        链接的四种状态：<br/>
+                        <ul>
+                        <li><i>a:link</i> - 普通的、未被访问的链接</li>
+                        <li><i>a:visited</i> - 用户已访问的链接</li>
+                        <li><i>a:hover</i> - 鼠标指针位于链接的上方</li>
+                        <li><i>a:active</i> - 链接被点击的时刻</li>
+                        </ul>
+                    </blockquote>
+                    <a href="https://www.w3school.com.cn/css/css_link.asp" target="_blank" rel="noopener">具体内容请点击此处</a><br/><br/><br/><br/>
+                </dd>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <dd id="cs">CSS表格</dd>
+                <dd>
+                    <blockquote>
+                        如需在 <i>CSS</i> 中设置表格边框，请使用 <i>border</i> 属性。<br/>
+                        <i>border-collapse</i> 属性设置是否将表格边框折叠为单一边框。<br/>
+                        通过 <i>width</i> 和 <i>height</i> 属性定义表格的宽度和高度。<br/>
+                        <i>text-align</i> 和 <i>vertical-align</i> 属性设置表格中文本的对齐方式。<br/>
+                    </blockquote>
+                    <a href="https://www.w3school.com.cn/css/css_table.asp" target="_blank" rel="noopener">具体内容请点击此处</a><br/><br/><br/><br/>
+                </dd>
+                <table border="0">
+                    <tr>
+                        <td>2020/4/3</td>
+                        <td><a href="https://www.w3school.com.cn/css/index.asp" target="_blank" rel="noopener">了解更多CSS相关知识</a> |
+                            <a href="https://www.w3school.com.cn" target="_blank" rel="noopener">了解其他</a>
+                        </td>
+                    </tr>
+                </table>
+                <hr style="height:3px;border:none;border-top:3px double rgb(13, 4, 90);" /> 
+            </dl>
+            <dl id="js">
+                <dt>JS语法</dt>
+                <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+                <p>没有了。</p>
+                <p>加上JS这一栏只是为了凑多一栏。</p> 
+                <p>让界面好看一点。</p>
+                <table border="0">
+                    <tr>
+                        <td>2020/4/3</td>
+                        <td><a href="https://www.w3school.com.cn/js/index.asp" target="_blank" rel="noopener">了解更多JS相关知识</a> |
+                            <a href="https://www.w3school.com.cn" target="_blank" rel="noopener">了解其他</a>
+                        </td>
+                    </tr>
+                </table>
+                <hr style="height:3px;border:none;border-top:3px double rgb(13, 4, 90);" /> 
+            </dl>
+        </div>
+       </div>
+    </body>
+</html>
