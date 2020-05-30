@@ -16,7 +16,7 @@
 <meta property="og:description" content="故事的由来就在开始数据库课程实验的前几天，我在朋友圈看到有高中同学因为做他们学校的数据库实验把自己的C盘撑爆了，当时的我只知道嘲笑一番。课程实验开始了，按照要求同时为了追求省力我选择了使用 SQL Server 作为此系列实验的开发环境。于是在浏览了一番 SQL Server 官方文档之后">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-29T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-05-29T15:45:03.359Z">
+<meta property="article:modified_time" content="2020-05-30T06:55:40.184Z">
 <meta property="article:author" content="bysbol">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
@@ -173,7 +173,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="故事的由来"><a href="#故事的由来" class="headerlink" title="故事的由来"></a>故事的由来</h2><p>就在开始数据库课程实验的前几天，我在朋友圈看到有高中同学因为做他们学校的数据库实验把自己的C盘撑爆了，当时的我只知道嘲笑一番。课程实验开始了，按照要求同时为了追求省力我选择了使用 SQL Server 作为此系列实验的开发环境。于是在浏览了一番<a href="https://docs.microsoft.com/zh-cn/sql/?view=sql-server-ver15" target="_blank" rel="noopener"> SQL Server 官方文档</a>之后<a id="more"></a>，我清楚了在 Windows 10 做这个实验大概要有一个集成环境来管理 SQL ，由于 SSMS 是免费的，一直以来微软给我的印象还不错，就果断下载了它。下载安装之后还缺一个 SQL Server 数据库服务，正准备下载之际想到了几天前在朋友圈看到的惨剧，于是乎搜索了一番数据库对磁盘空间的要求、SQL Server 撑爆磁盘之类的帖子，感觉是跟日志文件之类的东西有关。鉴于自己是第一次接触，自己电脑的硬盘空间不是很充裕，怕翻同样的车，又想到之前白嫖的阿里云在家学习计划的云服务器还没怎么利用，于是乎就萌生了把 SQL Server 挂在云服务器端，而在本地用 SSMS 对 SQL Server 进行处理的想法。</p>
+        <h2 id="故事的由来"><a href="#故事的由来" class="headerlink" title="故事的由来"></a>故事的由来</h2><p>就在开始数据库课程实验的前几天，我在朋友圈看到有高中同学因为做他们学校的数据库实验把自己的C盘撑爆了，当时的我只知道嘲笑一番。课程实验开始了，按照要求同时为了追求省力我选择了使用 SQL Server 作为此系列实验的开发环境。于是在浏览了一番<a href="https://docs.microsoft.com/zh-cn/sql/?view=sql-server-ver15" target="_blank" rel="noopener"> SQL Server 官方文档</a>之后<a id="more"></a>，我清楚了在 Windows 10 做这个实验大概要有一个集成环境来管理 SQL ，由于 SSMS 是免费的，一直以来微软给我的印象还不错，就果断下载了它。下载安装之后还缺一个 SQL Server 数据库服务，正准备下载之际想到了几天前在朋友圈看到的惨剧，于是乎搜索了一番数据库对磁盘空间的要求、SQL Server 撑爆磁盘之类的帖子，感觉是跟日志文件之类的东西有关。鉴于自己是第一次接触，自己电脑的硬盘空间不是很充裕，怕一不小心翻同样的车，又想到之前白嫖的阿里云在家学习计划的云服务器还没怎么利用（而且把服务器玩坏了就…坏了吧），于是乎就萌生了把 SQL Server 挂在云服务器端，而在本地用 SSMS 对 SQL Server 进行处理的想法。</p>
 <h2 id="怎么个操作法"><a href="#怎么个操作法" class="headerlink" title="怎么个操作法"></a>怎么个操作法</h2><p>从头到尾捋一遍：</p>
 <ol>
 <li>到微软官网下载 <a href="https://docs.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15" target="_blank" rel="noopener">SSMS</a> 并安装</li>
@@ -414,6 +414,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
