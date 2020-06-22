@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  background-image:url("../img/xzq.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.gallery-container {
+  position: relative;
+  height: 20vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.gallery {
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.frame {
+  opacity: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  position: relative;
+  height: 100%;
+  width: 200px;
+  background: white;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  cursor: pointer;
+  overflow: hidden;
+  background: radial-gradient(rgb(207,175,127,0), rgb(106,74,15,0));
+}
+.frame .image {
+  display: block;
+  position: relative;
+  height: 15%;
+  width: 90%;
+  pointer-events: none;
+  border: 5px solid rgba(207, 203, 203, 0.315);
+  border-radius: 15px;
+  box-shadow:0px 0px  10px 5px rgb(119, 119, 119);
+}
+.frame .info {
+  color: white;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  font-family: "Source Sans Pro", serif;
+  font-size: 1.2em;
+}
+.gallery-container:hover .gallery{
+  opacity: 1;
+  color: #656e73;
+}
