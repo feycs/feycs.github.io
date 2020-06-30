@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 博客 | Bysbol</title>
+  <title>漫漫复习月之学期回顾（计组实验篇） | Bysbol</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Bysbol">
-<meta property="og:url" content="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/index.html">
+  <meta name="description" content="这应该是遇到过的最上心的助教了在开始新一期的逼逼之前，还是先把实验内容挂上来，实验内容助教都是发在qq群里，当然在第一周发了第一章之后就可以在助教关于这个实验的 gitbook 还有助教的一个 github repo 找到所有的实验内容了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="漫漫复习月之学期回顾（计组实验篇）">
+<meta property="og:url" content="http://yoursite.com/2020/06/30/cpt-or&des/index.html">
 <meta property="og:site_name" content="Bysbol">
+<meta property="og:description" content="这应该是遇到过的最上心的助教了在开始新一期的逼逼之前，还是先把实验内容挂上来，实验内容助教都是发在qq群里，当然在第一周发了第一章之后就可以在助教关于这个实验的 gitbook 还有助教的一个 github repo 找到所有的实验内容了。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-06-30T03:23:15.834Z">
 <meta property="article:author" content="bysbol">
+<meta property="article:tag" content="学期回顾">
 <meta name="twitter:card" content="summary">
   
   
@@ -142,60 +147,190 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-cpt-or&amp;des" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/28/hello-world/" class="archive-article-date">
-  	<time datetime="2020-05-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-28</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/28/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      漫漫复习月之学期回顾（计组实验篇）
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/06/30/cpt-or&des/" class="archive-article-date">
+  	<time datetime="2020-06-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="这应该是遇到过的最上心的助教了"><a href="#这应该是遇到过的最上心的助教了" class="headerlink" title="这应该是遇到过的最上心的助教了"></a>这应该是遇到过的最上心的助教了</h2><p>在开始新一期的逼逼之前，还是先把实验内容挂上来，实验内容助教都是发在qq群里，当然在第一周发了第一章之后就可以在助教关于这个实验的<a href="https://groupsun.gitbook.io/ccpa2020-lab/" target="_blank" rel="noopener"> gitbook </a>还有助教的一个<a href="https://github.com/Groupsun/CCPA-2020-LAB" target="_blank" rel="noopener"> github repo </a>找到所有的实验内容了。<a id="more"></a>如果没有猜错这一次实验的工具PyHCL应该是助教的团队做出来的（赖老师总是可以搞出一些自己的工具）。不得不提助教真的是相当上心，从实验文档的书写到实验过程中给同学们答疑解惑，感觉PyHCL他应该也花了不少心血做（如果是他做的话虽然看起来是）。</p>
+<h2 id="这应该是史上最耗时的实验了"><a href="#这应该是史上最耗时的实验了" class="headerlink" title="这应该是史上最耗时的实验了"></a>这应该是史上最耗时的实验了</h2><p>简单捋一下这一次实验大概要做的东西：</p>
+<ol>
+<li>根据实验题目要求编写PyHCL代码；</li>
+<li>利用PyHCL代码生成.fir文件；</li>
+<li>.fir文件生成.v文件；</li>
+<li>用C++或者python编写harness仿真代码；</li>
+<li>利用.v代码和harness代码生成.vcd波形图判断PyHCL代码是否争取；</li>
+</ol>
+<p>个人理解大概就是要用PyHCL编写python代码，并利用一些工具生成Verilog代码做硬件描述，而不是直接使用Verilog。在实验的过程中我也有时候会去看看生成的Verilog代码长什么样，确实用PyHCL来编写会简洁一些，按理应该更简单一些…吧。<br>但不管代码写起来难度怎么样，环境配置起来是真的要命。再简单捋一下这一次实验配置的环境：</p>
+<ol start="0">
+<li>在一切开始之前，需要要有一个Linux环境；</li>
+<li>首先是安装PyHCL库，这个容易，最傻逼的做法扔同一个文件夹就过了；</li>
+<li>firrtl的安装，firrtl同时还依赖verilator、yosys以及sbt，这一点是比较折磨人的，sbt安装过程一开始没挂代理，没换国内源，差点被气死；</li>
+<li>安装GTKwave,查看波形图。这个工具还是比较容易安装的就不再提。</li>
+</ol>
+<p>👆以上应该是试错之后大家总结起来的最好走的路，此外应该还有cocotb和treadle两个工具可以用，具体怎么用我也不清楚，毕竟安装都安装得不利索。虽然说好走，但在不断试错的过程中还是占用了我那一两周大部分的课余时间，折磨得死去活来。还没开始配置实验工具，光是装个Ubuntu可能就有一堆人有问题，好在我在给电脑加硬盘的时候就已经装了双系统。另外firrtl花了我两三天，之后还以为什么cocotb要装、treadle要装，阅读了很多文档后云里雾里，不过好在发现只是一种选择，只安装那一些就可以搞定。</p>
+<h2 id="差不多也就是这样"><a href="#差不多也就是这样" class="headerlink" title="差不多也就是这样"></a>差不多也就是这样</h2><p>其实也没什么好写的，如果不读研的话自己大概率不会做硬件。<br>但又觉得这次实验太过分了不写下来有点过意不去。</p>
+<h2 id="六月也就这样过去了"><a href="#六月也就这样过去了" class="headerlink" title="六月也就这样过去了"></a>六月也就这样过去了</h2><p>毛概的论文也写完了，毛概的总结大概是不会浪费时间去写的。<br>算法可能会写一写，在七月中或七月末。<br>整个七月的重心应该就是计组的课设还有复习吧。<br>小程序估计也不会去弄，总得回校讨论一下之后再搞。<br>回校8.3开始就连考三天<br>8.3计组<br>8.4数据库<br>8.5算法<br>然后是各种实验，电工实验可能有个小考试<br>还得补个电工实习。</p>
+<h2 id="看过了下学期的课表"><a href="#看过了下学期的课表" class="headerlink" title="看过了下学期的课表"></a>看过了下学期的课表</h2><p>还是挺硬核的，课程挺多，也都没那么容易，但过了下学期其实大学生涯就没什么课可以上了。且行且珍惜，好好努力，找到方向，找找实习、项目什么的，明年此时应该就会开始焦虑一段时间了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学期回顾</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/30/cpt-or&des/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/06/22/web-homework/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">漫漫复习月之学期回顾（web篇）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+  
+  
+  
+  
+
+  
+    <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'NcclUp49ReoR9i4iB5gTTv3M-gzGzoHsz',
+      app_key: 'crhYPkASiPPJyaKE3TqB9Gae',
+      placeholder: '留下你来过的痕迹~'
+    });
+</script>
+  
+  
+  
 
 
           </div>
@@ -220,9 +355,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
